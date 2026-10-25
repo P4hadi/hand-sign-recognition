@@ -1,0 +1,6 @@
+actual\predicted,open_palm,fist,thumbs_up,peace_sign,ok_sign
+open_palm,40,0,0,0,0
+fist,1,39,0,0,0
+thumbs_up,0,0,40,0,0
+peace_sign,0,0,0,40,0
+ok_sign,0,0,0,0,40

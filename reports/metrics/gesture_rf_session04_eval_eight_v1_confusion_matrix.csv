@@ -1,0 +1,9 @@
+actual\predicted,open_palm,fist,thumbs_up,peace_sign,ok_sign,pointing_up,three_fingers,call_me
+open_palm,146,0,0,1,2,1,0,0
+fist,0,147,0,0,0,3,0,0
+thumbs_up,0,0,150,0,0,0,0,0
+peace_sign,1,0,0,148,0,0,1,0
+ok_sign,1,0,0,0,149,0,0,0
+pointing_up,0,0,1,0,0,149,0,0
+three_fingers,3,0,0,1,0,0,146,0
+call_me,0,0,117,0,0,1,0,32

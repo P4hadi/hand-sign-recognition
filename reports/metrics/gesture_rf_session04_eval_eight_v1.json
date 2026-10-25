@@ -1,0 +1,214 @@
+{
+  "schema_version": "1.0",
+  "model_name": "gesture_rf_session04_train_session05_test",
+  "classifier": "sklearn.ensemble.RandomForestClassifier",
+  "random_state": 42,
+  "evaluation_method": "whole-session holdout",
+  "evaluation_scope": "same-user session-aware held-out evaluation",
+  "training_session_ids": [
+    "user01_session04"
+  ],
+  "test_session_ids": [
+    "user01_session05"
+  ],
+  "training_user_ids": [
+    "user_01"
+  ],
+  "test_user_ids": [
+    "user_01"
+  ],
+  "label_order": [
+    "open_palm",
+    "fist",
+    "thumbs_up",
+    "peace_sign",
+    "ok_sign",
+    "pointing_up",
+    "three_fingers",
+    "call_me"
+  ],
+  "feature_policy": {
+    "used_columns": [
+      "landmark_00_x",
+      "landmark_00_y",
+      "landmark_00_z",
+      "landmark_01_x",
+      "landmark_01_y",
+      "landmark_01_z",
+      "landmark_02_x",
+      "landmark_02_y",
+      "landmark_02_z",
+      "landmark_03_x",
+      "landmark_03_y",
+      "landmark_03_z",
+      "landmark_04_x",
+      "landmark_04_y",
+      "landmark_04_z",
+      "landmark_05_x",
+      "landmark_05_y",
+      "landmark_05_z",
+      "landmark_06_x",
+      "landmark_06_y",
+      "landmark_06_z",
+      "landmark_07_x",
+      "landmark_07_y",
+      "landmark_07_z",
+      "landmark_08_x",
+      "landmark_08_y",
+      "landmark_08_z",
+      "landmark_09_x",
+      "landmark_09_y",
+      "landmark_09_z",
+      "landmark_10_x",
+      "landmark_10_y",
+      "landmark_10_z",
+      "landmark_11_x",
+      "landmark_11_y",
+      "landmark_11_z",
+      "landmark_12_x",
+      "landmark_12_y",
+      "landmark_12_z",
+      "landmark_13_x",
+      "landmark_13_y",
+      "landmark_13_z",
+      "landmark_14_x",
+      "landmark_14_y",
+      "landmark_14_z",
+      "landmark_15_x",
+      "landmark_15_y",
+      "landmark_15_z",
+      "landmark_16_x",
+      "landmark_16_y",
+      "landmark_16_z",
+      "landmark_17_x",
+      "landmark_17_y",
+      "landmark_17_z",
+      "landmark_18_x",
+      "landmark_18_y",
+      "landmark_18_z",
+      "landmark_19_x",
+      "landmark_19_y",
+      "landmark_19_z",
+      "landmark_20_x",
+      "landmark_20_y",
+      "landmark_20_z"
+    ],
+    "excluded_metadata_columns": [
+      "label",
+      "session_id",
+      "user_id",
+      "handedness"
+    ]
+  },
+  "training_rows": 1200,
+  "test_rows": 1200,
+  "training_class_counts": {
+    "open_palm": 150,
+    "fist": 150,
+    "thumbs_up": 150,
+    "peace_sign": 150,
+    "ok_sign": 150,
+    "pointing_up": 150,
+    "three_fingers": 150,
+    "call_me": 150
+  },
+  "test_class_counts": {
+    "open_palm": 150,
+    "fist": 150,
+    "thumbs_up": 150,
+    "peace_sign": 150,
+    "ok_sign": 150,
+    "pointing_up": 150,
+    "three_fingers": 150,
+    "call_me": 150
+  },
+  "metrics": {
+    "accuracy": 0.8891666666666667,
+    "macro_precision": 0.9325925362192465,
+    "macro_recall": 0.8891666666666667,
+    "macro_f1": 0.8711847986151842
+  },
+  "per_class": {
+    "open_palm": {
+      "precision": 0.9668874172185431,
+      "recall": 0.9733333333333334,
+      "f1-score": 0.9700996677740864,
+      "support": 150.0
+    },
+    "fist": {
+      "precision": 1.0,
+      "recall": 0.98,
+      "f1-score": 0.98989898989899,
+      "support": 150.0
+    },
+    "thumbs_up": {
+      "precision": 0.5597014925373134,
+      "recall": 1.0,
+      "f1-score": 0.7177033492822966,
+      "support": 150.0
+    },
+    "peace_sign": {
+      "precision": 0.9866666666666667,
+      "recall": 0.9866666666666667,
+      "f1-score": 0.9866666666666667,
+      "support": 150.0
+    },
+    "ok_sign": {
+      "precision": 0.9867549668874173,
+      "recall": 0.9933333333333333,
+      "f1-score": 0.9900332225913622,
+      "support": 150.0
+    },
+    "pointing_up": {
+      "precision": 0.9675324675324676,
+      "recall": 0.9933333333333333,
+      "f1-score": 0.9802631578947368,
+      "support": 150.0
+    },
+    "three_fingers": {
+      "precision": 0.9931972789115646,
+      "recall": 0.9733333333333334,
+      "f1-score": 0.9831649831649831,
+      "support": 150.0
+    },
+    "call_me": {
+      "precision": 1.0,
+      "recall": 0.21333333333333335,
+      "f1-score": 0.3516483516483517,
+      "support": 150.0
+    },
+    "accuracy": 0.8891666666666667,
+    "macro avg": {
+      "precision": 0.9325925362192465,
+      "recall": 0.8891666666666667,
+      "f1-score": 0.8711847986151842,
+      "support": 1200.0
+    },
+    "weighted avg": {
+      "precision": 0.9325925362192466,
+      "recall": 0.8891666666666667,
+      "f1-score": 0.8711847986151842,
+      "support": 1200.0
+    }
+  },
+  "confusion_matrix_labels": [
+    "open_palm",
+    "fist",
+    "thumbs_up",
+    "peace_sign",
+    "ok_sign",
+    "pointing_up",
+    "three_fingers",
+    "call_me"
+  ],
+  "limitations": [
+    "Both sessions belong to user_01.",
+    "This does not measure unseen-user generalization.",
+    "The held-out session is independent by session_id, but not by user."
+  ],
+  "artifacts": {
+    "model": "C:\\Users\\Lenovo\\hand-sign-recognition\\models\\gesture_rf_session04_eval_eight_v1.joblib",
+    "evaluation_report": "C:\\Users\\Lenovo\\hand-sign-recognition\\reports\\metrics\\gesture_rf_session04_eval_eight_v1.json",
+    "confusion_matrix": "C:\\Users\\Lenovo\\hand-sign-recognition\\reports\\metrics\\gesture_rf_session04_eval_eight_v1_confusion_matrix.csv"
+  }
+}

@@ -1,0 +1,184 @@
+{
+  "schema_version": "1.0",
+  "model_name": "gesture_rf_session02_train_session03_test",
+  "classifier": "sklearn.ensemble.RandomForestClassifier",
+  "random_state": 42,
+  "evaluation_method": "whole-session holdout",
+  "evaluation_scope": "session-aware held-out evaluation",
+  "training_session_ids": [
+    "user01_session02"
+  ],
+  "test_session_ids": [
+    "user01_session03"
+  ],
+  "training_user_ids": [
+    "user_01"
+  ],
+  "test_user_ids": [
+    "user_01"
+  ],
+  "label_order": [
+    "open_palm",
+    "fist",
+    "thumbs_up",
+    "peace_sign",
+    "ok_sign"
+  ],
+  "feature_policy": {
+    "used_columns": [
+      "landmark_00_x",
+      "landmark_00_y",
+      "landmark_00_z",
+      "landmark_01_x",
+      "landmark_01_y",
+      "landmark_01_z",
+      "landmark_02_x",
+      "landmark_02_y",
+      "landmark_02_z",
+      "landmark_03_x",
+      "landmark_03_y",
+      "landmark_03_z",
+      "landmark_04_x",
+      "landmark_04_y",
+      "landmark_04_z",
+      "landmark_05_x",
+      "landmark_05_y",
+      "landmark_05_z",
+      "landmark_06_x",
+      "landmark_06_y",
+      "landmark_06_z",
+      "landmark_07_x",
+      "landmark_07_y",
+      "landmark_07_z",
+      "landmark_08_x",
+      "landmark_08_y",
+      "landmark_08_z",
+      "landmark_09_x",
+      "landmark_09_y",
+      "landmark_09_z",
+      "landmark_10_x",
+      "landmark_10_y",
+      "landmark_10_z",
+      "landmark_11_x",
+      "landmark_11_y",
+      "landmark_11_z",
+      "landmark_12_x",
+      "landmark_12_y",
+      "landmark_12_z",
+      "landmark_13_x",
+      "landmark_13_y",
+      "landmark_13_z",
+      "landmark_14_x",
+      "landmark_14_y",
+      "landmark_14_z",
+      "landmark_15_x",
+      "landmark_15_y",
+      "landmark_15_z",
+      "landmark_16_x",
+      "landmark_16_y",
+      "landmark_16_z",
+      "landmark_17_x",
+      "landmark_17_y",
+      "landmark_17_z",
+      "landmark_18_x",
+      "landmark_18_y",
+      "landmark_18_z",
+      "landmark_19_x",
+      "landmark_19_y",
+      "landmark_19_z",
+      "landmark_20_x",
+      "landmark_20_y",
+      "landmark_20_z"
+    ],
+    "excluded_metadata_columns": [
+      "label",
+      "session_id",
+      "user_id",
+      "handedness"
+    ]
+  },
+  "training_rows": 750,
+  "test_rows": 750,
+  "training_class_counts": {
+    "open_palm": 150,
+    "fist": 150,
+    "thumbs_up": 150,
+    "peace_sign": 150,
+    "ok_sign": 150
+  },
+  "test_class_counts": {
+    "open_palm": 150,
+    "fist": 150,
+    "thumbs_up": 150,
+    "peace_sign": 150,
+    "ok_sign": 150
+  },
+  "metrics": {
+    "accuracy": 0.7933333333333333,
+    "macro_precision": 0.6956942641526039,
+    "macro_recall": 0.7933333333333333,
+    "macro_f1": 0.727677184001631
+  },
+  "per_class": {
+    "open_palm": {
+      "precision": 0.9867549668874173,
+      "recall": 0.9933333333333333,
+      "f1-score": 0.9900332225913622,
+      "support": 150.0
+    },
+    "fist": {
+      "precision": 1.0,
+      "recall": 0.9733333333333334,
+      "f1-score": 0.9864864864864865,
+      "support": 150.0
+    },
+    "thumbs_up": {
+      "precision": 0.4983388704318937,
+      "recall": 1.0,
+      "f1-score": 0.6651884700665188,
+      "support": 150.0
+    },
+    "peace_sign": {
+      "precision": 0.9933774834437086,
+      "recall": 1.0,
+      "f1-score": 0.9966777408637874,
+      "support": 150.0
+    },
+    "ok_sign": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 150.0
+    },
+    "accuracy": 0.7933333333333333,
+    "macro avg": {
+      "precision": 0.6956942641526039,
+      "recall": 0.7933333333333333,
+      "f1-score": 0.727677184001631,
+      "support": 750.0
+    },
+    "weighted avg": {
+      "precision": 0.6956942641526038,
+      "recall": 0.7933333333333333,
+      "f1-score": 0.727677184001631,
+      "support": 750.0
+    }
+  },
+  "confusion_matrix_labels": [
+    "open_palm",
+    "fist",
+    "thumbs_up",
+    "peace_sign",
+    "ok_sign"
+  ],
+  "limitations": [
+    "Both sessions belong to user_01.",
+    "This does not measure unseen-user generalization.",
+    "The held-out session is independent of training by session_id, but not by user."
+  ],
+  "artifacts": {
+    "model": "C:\\Users\\Lenovo\\hand-sign-recognition\\models\\gesture_rf_session02_eval_v1.joblib",
+    "evaluation_report": "C:\\Users\\Lenovo\\hand-sign-recognition\\reports\\metrics\\gesture_rf_session02_eval_v1.json",
+    "confusion_matrix": "C:\\Users\\Lenovo\\hand-sign-recognition\\reports\\metrics\\gesture_rf_session02_eval_v1_confusion_matrix.csv"
+  }
+}

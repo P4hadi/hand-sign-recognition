@@ -1,0 +1,65 @@
+# Python virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python cache and bytecode
+__pycache__/
+*.py[cod]
+*.pyo
+*$py.class
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Local collected data and generated datasets
+data/
+*.csv
+
+# Local model binaries and third-party task bundles
+models/
+*.joblib
+*.task
+!models/
+!models/gesture_rf_v4_eight_gestures_session06.joblib
+!models/SHA256SUMS.txt
+
+# Generated reports and temporary files
+reports/metrics/*
+!reports/metrics/
+scratch/
+tmp/
+temp/
+*.log
+*.tmp
+*.bak
+
+# Credentials and local configuration
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+credentials*.json
+secrets*.json
+tokens*.json
+
+# OS/editor state
+.coverage
+coverage.xml
+htmlcov/
+
+# Selected sanitized portfolio reports
+!reports/metrics/gesture_rf_session04_plus_session06_eval_eight_v1.json
+!reports/metrics/gesture_rf_session04_plus_session06_eval_eight_v1_confusion_matrix.csv
+!reports/metrics/gesture_rf_v4_eight_gestures_session06_final.json
